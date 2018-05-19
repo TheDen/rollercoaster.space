@@ -3,15 +3,23 @@
     <title>ROLLERCOASTER TOASTER</title>
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
     <style>
-html {background-color: black;}
+      html {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url('images/rollercoaster.gif');
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
     </style>
   </head>
   <body>
-    <div style="text-align:center; position: relative; top: 50%; transform: translateY(-50%);">
-      <img src="images/rollercoaster.gif" alt="DON'T EAT TOAST" /></a>
-    </div>
   </body>
-  <audio autoplay hidden loop="loop">
+  <audio loop="loop" autoplay="autoplay">
     <source src="files/rollercoastermgf.mp3" type="audio/mp3">
   </audio>
-  <html>
+  <embed name="rollercoaster" src="files/rollercoastermgf.mp3" loop="false" hidden="true" autostart="true">
+<html>
